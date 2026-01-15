@@ -6,21 +6,13 @@ import {
   Briefcase, 
   User, 
   TrendingDown, 
-  ChevronDown,
-  ChevronUp,
-  Sparkles,
+  ChevronDown, 
+  ChevronUp, 
+  Sparkles, 
   ArrowRightLeft
 } from 'lucide-react';
 
 // --- Constants & Rules ---
-const IR_TABLE = [
-  { limit: 2428.80, rate: 0, deduction: 0 },
-  { limit: 2826.65, rate: 0.075, deduction: 182.16 },
-  { limit: 3751.05, rate: 0.15, deduction: 394.16 },
-  { limit: 4664.68, rate: 0.225, deduction: 675.49 },
-  { limit: Infinity, rate: 0.275, deduction: 908.73 }
-];
-
 // INSS Table 2025 (Old reference)
 const INSS_TABLE_2025 = [
   { limit: 1518.00, rate: 0.075 },
