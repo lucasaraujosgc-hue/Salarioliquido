@@ -6,7 +6,6 @@ import {
   Briefcase, 
   User, 
   TrendingDown, 
-  DollarSign,
   ChevronDown,
   ChevronUp,
   Sparkles,
