@@ -45,7 +45,12 @@ const SIMPLIFIED_DEDUCTION = 607.20;
 const formatCurrency = (val: number) => 
   new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(val);
 
-const calculateINSS = (grossSalary: number, isClt: boolean, table: typeof INSS_TABLE_2025) => {
+interface INSSTableRow {
+  limit: number;
+  rate: number;
+}
+
+const calculateINSS = (grossSalary: number, isClt: boolean, table: INSSTableRow[]) => {
   if (!isClt) return 0;
   
   let totalInss = 0;
