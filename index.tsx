@@ -124,7 +124,7 @@ const calculateIRRF = (salarioBruto: number, descontoINSS: number, numDependente
 // --- Components ---
 
 const Logo = () => (
-  <div className="flex items-center gap-3">
+  <a href="https://www.virgulacontabil.com.br" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
     <div className="bg-brand-card p-2 rounded-xl shadow-glow border border-gray-800">
       <Calculator className="w-8 h-8 text-brand-green" />
     </div>
@@ -132,7 +132,7 @@ const Logo = () => (
       <span className="text-3xl font-bold tracking-tight text-white leading-none">Vírgula</span>
       <span className="text-xs font-bold tracking-[0.2em] text-brand-green uppercase mt-1">Contábil</span>
     </div>
-  </div>
+  </a>
 );
 
 const App = () => {
